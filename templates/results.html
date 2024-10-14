@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="results">
+        <h1>Summary and Topic</h1>
+        <h2>Summary:</h2>
+        <p>{{ summary }}</p>
+        
+        <h2>Predicted Main Topic:</h2>
+        <p>{{ topic }}</p>
+        <form method="POST" action="{{ url_for('save_summary') }}">
+            <input type="hidden" name="summary" value="{{ summary }}">
+            <input type="hidden" name="topic" value="{{ topic }}">
+            <input type="hidden" name="original_file_name" value="{{ original_file_name }}">
+            <button class="btn" type="submit"><span>Save as PDF</span></button>
+        </form>
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>
