@@ -1,0 +1,5 @@
+Flask==2.2.3
+python-dotenv==1.0.0
+PyMuPDF==1.22.5
+openai==0.27.8
+fpdf==1.7.2
