@@ -1,0 +1,127 @@
+/*#4A90E2;*/
+
+/*#357ABD;*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #4A90E2;
+    text-align: center;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+label {
+    font-weight: bold;
+    display: block; /* Makes label take full width */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+
+input[type="submit"] {
+    width: calc(100% - 20px); /* Adjust the width for text fields */
+    padding: 10px;
+    margin-top: 5px; /* Add a little space above inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.btn {
+    border-radius: 4px;
+    background-color: #4A90E2; /* Change to your desired color */
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px; /* Adjust font size as needed */
+    width: 100%; /* Ensure it takes the full width */
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn span:after {
+    content: '\00bb'; /* Arrow or any symbol */
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn:hover span {
+    padding-right: 25px; /* Space for the arrow */
+}
+
+.btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li {
+    color: red;
+}
+
+.results {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.results h2 {
+    color: #4A90E2;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #4A90E2;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
